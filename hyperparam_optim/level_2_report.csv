@@ -1,0 +1,4 @@
+Param Combination,wins(large_costs),avg_pbest(large_costs),avg_time(large_costs),wins(mid_costs_tight),avg_pbest(mid_costs_tight),avg_time(mid_costs_tight),wins(mid_nocosts_loose),avg_pbest(mid_nocosts_loose),avg_time(mid_nocosts_loose),wins(mid_nocosts_tight),avg_pbest(mid_nocosts_tight),avg_time(mid_nocosts_tight),wins(small_costs),avg_pbest(small_costs),avg_time(small_costs),wins(small_nocosts),avg_pbest(small_nocosts),avg_time(small_nocosts)
+accept_criteria_f:0,5,1.0,105.515,1,0.889,46.958,1,0.99,44.064,0,0.92,42.155,3,0.99,12.14,2,0.913,12.621
+accept_criteria_f:1,0,0.9,100.228,4,0.972,45.967,3,0.989,45.464,2,0.957,42.311,4,0.999,11.937,5,1.0,12.487
+accept_criteria_f:2,0,0.853,101.109,0,0.796,45.083,1,0.966,43.773,3,0.96,42.345,4,1.0,11.943,5,1.0,12.478

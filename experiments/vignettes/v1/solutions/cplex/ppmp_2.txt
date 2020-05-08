@@ -1,0 +1,62 @@
+
+<<< setup
+
+
+<<< generate
+
+Tried aggregator 2 times.
+MIP Presolve eliminated 391473 rows and 215876 columns.
+MIP Presolve modified 334606 coefficients.
+Aggregator did 88756 substitutions.
+Reduced MIP has 77579 rows, 75946 columns, and 431492 nonzeros.
+Reduced MIP has 75888 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Probing time =    0.08 sec.
+Tried aggregator 1 time.
+Presolve time =    4.34 sec.
+Probing fixed 2092 vars, tightened 0 bounds.
+Probing time =    5.87 sec.
+Clique table members: 583849.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time =   15.97 sec.
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                            0.0000                     32     --- 
+      0     0   103964.1734  2679        0.0000   103964.1734       32     --- 
+      0     0   103964.1734  2022        0.0000    Cuts: 1150    23246     --- 
+      0     0   103964.1734  2796        0.0000    Cuts: 7689    53554     --- 
+      0     0   103964.1734  2178        0.0000     Cuts: 726    73278     --- 
+      0     0   103964.1734  3234        0.0000    Cuts: 8473   109370     --- 
+Heuristic still looking.
+Heuristic still looking.
+      0     2   103964.1734  1241        0.0000   103964.1734   109370     --- 
+Elapsed real time = 1196.05 sec. (tree size =  0.01 MB, solutions = 1)
+
+Clique cuts applied:  19
+Implied bound cuts applied:  301
+Flow cuts applied:  30
+Mixed integer rounding cuts applied:  323
+Gomory fractional cuts applied:  1
+
+Root node processing (before b&c):
+  Real time             = 1191.56
+Parallel b&c, 4 threads:
+  Real time             =    4.14
+  Sync time (average)   =    0.00
+  Wait time (average)   =    0.00
+                          -------
+Total (root+branch&cut) = 1195.70 sec.
+
+<<< solve
+
+
+OBJECTIVE: 0
+
+<<< post process
+
+
+<<< done
+

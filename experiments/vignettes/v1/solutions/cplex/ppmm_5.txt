@@ -1,0 +1,61 @@
+
+<<< setup
+
+
+<<< generate
+
+Tried aggregator 2 times.
+MIP Presolve eliminated 413390 rows and 233021 columns.
+MIP Presolve modified 309490 coefficients.
+Aggregator did 80143 substitutions.
+Reduced MIP has 64275 rows, 67414 columns, and 366433 nonzeros.
+Reduced MIP has 67356 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Probing time =    0.09 sec.
+Tried aggregator 1 time.
+MIP Presolve modified 1552 coefficients.
+Reduced MIP has 64275 rows, 67414 columns, and 366433 nonzeros.
+Reduced MIP has 67356 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time =    3.84 sec.
+Probing fixed 1598 vars, tightened 0 bounds.
+Probing time =    5.56 sec.
+Clique table members: 501415.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time =   11.92 sec.
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                            0.0000                     34     --- 
+      0     0     7381.8124  2474        0.0000     7381.8124       34     --- 
+      0     0     7381.8124  1788        0.0000     Cuts: 828    34927     --- 
+      0     0     7381.8124  1608        0.0000     Cuts: 812    71954     --- 
+      0     0     7381.8124  1565        0.0000     Cuts: 709   107662     --- 
+      0     0     7381.8124  2482        0.0000    Cuts: 6540   145678     --- 
+      0     0     7381.8124  1356        0.0000     Cuts: 133   181962     --- 
+
+Clique cuts applied:  168
+Implied bound cuts applied:  5536
+Flow cuts applied:  149
+Mixed integer rounding cuts applied:  1755
+
+Root node processing (before b&c):
+  Real time             = 1196.25
+Parallel b&c, 4 threads:
+  Real time             =    0.00
+  Sync time (average)   =    0.00
+  Wait time (average)   =    0.00
+                          -------
+Total (root+branch&cut) = 1196.25 sec.
+
+<<< solve
+
+
+OBJECTIVE: 0
+
+<<< post process
+
+
+<<< done
+

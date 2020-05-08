@@ -1,0 +1,9 @@
+{"algorithm":"alns",
+ "problem_folder":"../data/test_gen_problems",
+ "solution_folder":"../data/test_solutions",
+ "solution_set_initializer":"OrderedSolutionSetInitializer(worker_ordering_f=build_most_flexible_first_worker_ordering_f, job_node_ordering_f=build_earliest_endtime_first_job_node_ordering_f, role_ordering_f=build_rarest_role_first_ordering_f)",
+ "mutators":"mutators", 
+ "reward_points":[1,2,3,4], "accept_criteria_f":improve_accept_criteria,
+               "reaction_factor":0.5, "max_iter":iterations, "max_unimprove_iter":None, "max_time":None, 
+               "max_unimprove_time":None, "num_restarts":num_restarts
+}

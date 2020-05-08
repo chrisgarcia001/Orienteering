@@ -1,0 +1,66 @@
+
+<<< setup
+
+
+<<< generate
+
+Tried aggregator 3 times.
+MIP Presolve eliminated 429105 rows and 219998 columns.
+MIP Presolve modified 145120 coefficients.
+Aggregator did 81304 substitutions.
+Reduced MIP has 41483 rows, 73476 columns, and 319944 nonzeros.
+Reduced MIP has 73418 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Probing time =    0.09 sec.
+Tried aggregator 1 time.
+MIP Presolve eliminated 82 rows and 0 columns.
+MIP Presolve modified 3156 coefficients.
+Reduced MIP has 41401 rows, 73476 columns, and 319698 nonzeros.
+Reduced MIP has 73418 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time =    3.98 sec.
+Probing time =    0.09 sec.
+Clique table members: 152456.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time =    0.45 sec.
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                            0.0000                   6780     --- 
+      0     0     8617.3183    95        0.0000     8617.3183     6780     --- 
+      0     0     8616.3500    60        0.0000     Cuts: 968     7182     --- 
+      0     0     8616.2640    53        0.0000     Cuts: 972     7239     --- 
+      0     0     8616.2224    76        0.0000      Cuts: 94     7328     --- 
+      0     0     8616.1012    58        0.0000     Cuts: 351     7501     --- 
+*     0+    0                         8609.3835     8616.1012     7527    0.08%
+      0     0     8616.0468    31     8609.3835     Cuts: 130     7527    0.08%
+      0     0     8616.0097    37     8609.3835     Cuts: 638     7588    0.08%
+*     0+    0                         8615.5497     8616.0097     7588    0.01%
+
+Clique cuts applied:  21
+Implied bound cuts applied:  21
+Flow cuts applied:  170
+Mixed integer rounding cuts applied:  379
+Zero-half cuts applied:  12
+Gomory fractional cuts applied:  4
+
+Root node processing (before b&c):
+  Real time             =    7.06
+Parallel b&c, 4 threads:
+  Real time             =    0.00
+  Sync time (average)   =    0.00
+  Wait time (average)   =    0.00
+                          -------
+Total (root+branch&cut) =    7.06 sec.
+
+<<< solve
+
+
+OBJECTIVE: 8615.55
+
+<<< post process
+
+
+<<< done
+

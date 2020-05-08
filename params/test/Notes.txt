@@ -1,0 +1,2 @@
+prob_gen_test_3.json is just reward (no individual benefit) mid-sized and very tight - OPL loses (40 workers, 50 nodes, max_time=55)
+prob_gen_test_5.json is just reward (no individual benefit) mid-sized and loose - easy optimal (40 workers, 50 nodes, max_time=55)

@@ -1,0 +1,66 @@
+
+<<< setup
+
+
+<<< generate
+
+Tried aggregator 3 times.
+MIP Presolve eliminated 428846 rows and 221604 columns.
+MIP Presolve modified 154406 coefficients.
+Aggregator did 80643 substitutions.
+Reduced MIP has 42403 rows, 72531 columns, and 317960 nonzeros.
+Reduced MIP has 72477 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Probing time =    0.09 sec.
+Tried aggregator 1 time.
+MIP Presolve eliminated 167 rows and 0 columns.
+MIP Presolve modified 2498 coefficients.
+Reduced MIP has 42236 rows, 72531 columns, and 317459 nonzeros.
+Reduced MIP has 72477 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time =    3.95 sec.
+Probing time =    0.09 sec.
+Clique table members: 158200.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time =   11.89 sec.
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                            0.0000                     25     --- 
+      0     0     7574.1515  2306        0.0000     7574.1515       25     --- 
+      0     0     7574.1515   784        0.0000      Cuts: 54     8187     --- 
+      0     0     7574.1515   921        0.0000     Cuts: 879    16641     --- 
+      0     0     7574.1515   465        0.0000     Cuts: 268    21185     --- 
+      0     0     7574.1515   399        0.0000     Cuts: 646    27621     --- 
+      0     0     7574.1515   687        0.0000     Cuts: 573    35257     --- 
+Heuristic still looking.
+*     0+    0                         7574.1515     7574.1515    35257    0.00%
+      0     0        cutoff           7574.1515     7574.1515    35257    0.00%
+Elapsed real time = 147.42 sec. (tree size =  0.00 MB, solutions = 2)
+
+Clique cuts applied:  28
+Implied bound cuts applied:  152
+Flow cuts applied:  106
+Mixed integer rounding cuts applied:  296
+Zero-half cuts applied:  1
+
+Root node processing (before b&c):
+  Real time             =  143.50
+Parallel b&c, 4 threads:
+  Real time             =    0.00
+  Sync time (average)   =    0.00
+  Wait time (average)   =    0.00
+                          -------
+Total (root+branch&cut) =  143.50 sec.
+
+<<< solve
+
+
+OBJECTIVE: 7574.151
+
+<<< post process
+
+
+<<< done
+
