@@ -71,9 +71,4 @@ class GridSearchParamOptimizer:
         print('Writing Param Results to ' + self.output_filename)
         with open(self.output_filename, 'w') as outfile:
             outfile.write("\n".join([headers] + data))
-        
-        
-        
-        
 
-gen_problems = True

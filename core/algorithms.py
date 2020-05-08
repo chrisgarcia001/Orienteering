@@ -144,19 +144,16 @@ def randomly_order(elements):
 # Orders workers in least-skills/roles-first (i.e. most-flexible-first) order.
 def build_most_flexible_first_worker_ordering_f(problem, workers):
     skill_counts = dict([(h, sum(problem.e[h])) for h in range(problem.num_workers)])
-    #return lambda workers: sorted(list(workers), key=lambda h: skill_counts[h])
     return sorted(list(workers), key=lambda h: skill_counts[h])
 
 # Orders job nodes in earliest-end-time-first order.    
 def build_earliest_endtime_first_job_node_ordering_f(problem, job_nodes):
     job_node_end_times = dict([(j, problem.w[j][1]) for j in range(problem.num_nodes)])
-    #return lambda job_nodes: sorted(list(job_nodes), key=lambda j: job_node_end_times[j[0]])
     return sorted(list(job_nodes), key=lambda j: job_node_end_times[j[0]])
  
 # Orders roles in overall least-common-first ordering. 
 def build_rarest_role_first_ordering_f(problem, demands):
     role_occurrences = dict([(i, sum(problem.d[i])) for i in range(problem.num_roles)])
-    #return lambda demands: sorted(list(demands), key=lambda i: role_occurrences[i[0]])
     return sorted(list(demands), key=lambda i: role_occurrences[i[0]])
     
 
@@ -242,9 +239,7 @@ def terminate(i, unimprove_i, start_time, improve_time, max_iter=None, max_unimp
 improve_accept_criteria = lambda curr_sol, next_sol, i: next_sol['objective_f'] > curr_sol['objective_f'] 
 
 # The main Adaptive Large Neighborhood Search alorithm.
-# TODO: Test!
-def alns(problem, initial_ec, params):#mutators, reward_points=[1,2,3,4], accept_criteria_f=improve_accept_criteria, 
-         #reaction_factor=0.25, max_iter=None, max_unimprove_iter=None, max_time=None, max_unimprove_time=None):
+def alns(problem, initial_ec, params):
     best_ec = initial_ec
     best_sol = construct_solution(problem, initial_ec)
     for restart in range(params['num_restarts']):
@@ -300,19 +295,3 @@ def build_decreasing_prob_accept_criteria_f(start_p, end_p, iteration_span):
             return True
         return False
     return f
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
