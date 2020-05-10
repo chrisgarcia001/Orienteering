@@ -12,7 +12,7 @@ from algorithm_runner import *
 num_restarts = 50
 iterations = 10000000
 
-wf = build_most_flexible_first_worker_ordering_f
+wf = build_least_flexible_first_worker_ordering_f
 jnf = build_earliest_endtime_first_job_node_ordering_f
 rf = build_rarest_role_first_ordering_f
 ord_ec = OrderedSolutionSetInitializer(worker_ordering_f=wf, job_node_ordering_f=jnf, role_ordering_f=rf)

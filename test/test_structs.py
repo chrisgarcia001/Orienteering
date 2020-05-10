@@ -1,3 +1,7 @@
+import os
+import sys
+sys.path.insert(1, '../core')
+
 from structs import *
 from problem_gen import *
 from algorithms import *
@@ -42,7 +46,7 @@ print(rnd_ecs_2)
 
 
 print("\n\n")
-wf = build_most_flexible_first_worker_ordering_f(p3)
+wf = build_least_flexible_first_worker_ordering_f(p3)
 jnf = build_earliest_endtime_first_job_node_ordering_f(p3)
 rf = build_rarest_role_first_ordering_f(p3)
 
@@ -88,7 +92,7 @@ p5.to_opl_file('./data/p5.dat')
 
 
 ec = as_encoded_solution(p5)
-wf = build_most_flexible_first_worker_ordering_f(p5)
+wf = build_least_flexible_first_worker_ordering_f(p5)
 jnf = build_earliest_endtime_first_job_node_ordering_f(p5)
 rf = build_rarest_role_first_ordering_f(p5)
 ord_ec = OrderedSolutionSetInitializer(p5, worker_ordering_f=wf, job_node_ordering_f=jnf, 

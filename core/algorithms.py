@@ -141,8 +141,8 @@ def randomly_order(elements):
     rnd.shuffle(e)
     return e
 
-# Orders workers in least-skills/roles-first (i.e. most-flexible-first) order.
-def build_most_flexible_first_worker_ordering_f(problem, workers):
+# Orders workers in least-skills/roles-first (i.e. most-flexible) order.
+def build_least_flexible_first_worker_ordering_f(problem, workers):
     skill_counts = dict([(h, sum(problem.e[h])) for h in range(problem.num_workers)])
     return sorted(list(workers), key=lambda h: skill_counts[h])
 
@@ -246,7 +246,7 @@ def alns(problem, initial_ec, params):
         current_ec = initial_ec.copy()
         current_sol = construct_solution(problem, initial_ec)
         accum_rewards = [1.0 for i in range(len(params['mutators']))]
-        conditions = [] # Add numbers corresponding to condition each iteration: 0=best improved, 1=current improved, 2=sol. accepted, 3=sol. rejected
+        conditions = [] # Add indicator numbers corresponding to condition each iteration: 0=sol. rejected, 1=sol. accepted, 2=current improved, 3=best improved 
         i = 0
         unimprove_i = 0
         start_time = time.time()
